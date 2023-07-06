@@ -1,4 +1,4 @@
-import { decrement, increment, incrementByAmount } from "../redux/features/counter";
+import { decrement, increment, incrementByAmount } from "../redux/features/counter/counterSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <div>
-        <button
+        <button 
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
